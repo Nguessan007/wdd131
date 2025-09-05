@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* header, main+aside, footer */
+    grid-template-columns: 200px 1fr 200px; /* left sidebar, main, right sidebar */
+    gap: 10px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header spans full width */
+header {
+    background-color: rgb(32, 32, 32);
+    padding: 15px;
+    grid-column: 1 / -1;
+}
+header h1 {
+    color: white;
+}
+
+/* Navigation inside header */
+nav {
+    background-color: black;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+/* Main content in middle column */
+main {
+    background-color: grey;
+    padding: 5px;
+    grid-column: 2;
+}
+main h1 {
+    color: black;
+}
+
+/* Aside in right column */
+aside {
+    background-color: white;
+    padding: 5px;
+    grid-column: 3;
+}
+aside h2 {
+    color: black;
+}
+
+/* Footer spans full width */
+footer {
+    background-color: rgb(32, 32, 32);
+    padding: 2rem;
+    grid-column: 1 / -1;
+}
+footer h3 {
+    color: white;
+    margin: 0;
+}
