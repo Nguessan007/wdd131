@@ -140,9 +140,8 @@
   }
   .footer-inner {
     text-align: center;
+    padding: 1rem;
     display:flex;
-    flex-direction:column;
-    gap: 0.35rem;
     align-items:flex-start;
     font-size: 0.9rem;
     color: var(--card);
