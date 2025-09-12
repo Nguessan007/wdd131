@@ -3,7 +3,7 @@
 /* Basic setup */
 :root{
     --bg: #f6f7f9;
-    --card: #ffffff;
+    --card: burlywood;
     --accent: #2b6cb0; /* change to your color scheme */
     --muted: #6b7280;
     --max-width: 960px;
@@ -23,7 +23,7 @@
   
   /* Header */
   .site-header{
-    background: linear-gradient(180deg, var(--card), transparent);
+    background: linear-gradient(180deg, var(--card));
     background-color: burlywood;
     border-bottom: 1px solid rgba(0,0,0,0.06);
   }
