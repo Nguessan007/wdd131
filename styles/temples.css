@@ -145,6 +145,9 @@
     color: var(--card);
     font-family:'Montserrat', system-ui, -appl;
   }
+  .footer-inner p {
+    margin: 0.3rem 0;
+  }
   
   /* Accessibility: visible focus outlines */
   a:focus, button:focus {
