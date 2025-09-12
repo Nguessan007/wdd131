@@ -1,0 +1,166 @@
+/* Mobile-first base styles (temples.css) */
+
+/* Basic setup */
+:root{
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --accent: #2b6cb0; /* change to your color scheme */
+    --muted: #6b7280;
+    --max-width: 960px;
+    --gap: 1rem;
+    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+  
+  * { box-sizing: border-box; }
+  html,body { height: 100%; margin: 0; background: var(--bg); color: #111827; }
+  
+  /* Container centers and limits width */
+  .container {
+    width: calc(100% - 2rem);
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .site-header{
+    background: linear-gradient(180deg, var(--card), transparent);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0.75rem 0;
+  }
+  
+  /* Brand */
+  .brand h2{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.2px;
+  }
+  
+  /* Hamburger button (mobile only) */
+  .hamburger{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  /* Navigation (links hidden by default on mobile) */
+  .primary-nav { 
+  .nav-links {
+    display: none; /* mobile: menu hidden, toggled by JS */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .nav-links li { margin: 0.25rem 0; }
+  .nav-links a {
+    display:inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    color: var(--accent);
+    font-weight:600;
+  }
+  
+  /* hover effect */
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background: rgba(43,108,176,0.08);
+    transform: translateY(-1px);
+  }
+  
+  /* When nav is "open" we show links (JS toggles .open on .nav-links) */
+  .nav-links.open {
+    display: flex;
+  }
+  
+  /* Main content */
+  main.container {
+    padding: 1rem 0 3rem;
+  }
+  main h1{
+    font-family: 'Playfair Display', serif;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #0f172a;
+    text-align: left;
+  }
+  
+  /* Gallery grid: mobile = 1 column */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+  }
+  
+  /* Figure card */
+  figure {
+    margin: 0;
+    background: var(--card);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(16,24,40,0.06);
+    display:flex;
+    flex-direction: column;
+  }
+  figure img {
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+  }
+  figcaption{
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    border-top: 1px solid rgba(0,0,0,0.03);
+  }
+  
+  /* Footer */
+  .site-footer {
+    border-top: 1px solid rgba(0,0,0,0.06);
+    background: var(--card);
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+  }
+  .footer-inner {
+    display:flex;
+    flex-direction:column;
+    gap: 0.35rem;
+    align-items:flex-start;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  
+  /* Accessibility: visible focus outlines */
+  a:focus, button:focus {
+    outline: 3px solid rgba(43,108,176,0.18);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  
+  /* Small screens: keep hamburger visible and nav hidden until toggled */
+  @media (max-width: 420px) {
+    .brand h2 { font-size: 1.1rem; }
+  }
+  
+  /* Utility: show nav-links inline when JS adds class 'desktop' (used by large CSS too) */
+  .nav-links.desktop {
+    display:flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+  } 
+ }  

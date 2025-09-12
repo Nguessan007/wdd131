@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Replace fonts if you prefer different ones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first styles -->
+  <link rel="stylesheet" href="styles/temples.css">
+
+  <!-- Larger-screen overrides (linked after mobile file) -->
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <h2>Temple Album</h2>
+      </div>
+
+      <!-- Hamburger button - visible only on mobile -->
+      <button id="hamburger" class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <!-- Navigation: use flex in CSS -->
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Beautiful Temples Around the World</h1>
+
+    <!-- gallery grid -->
+    <section class="gallery" aria-label="Temple gallery">
+      <!-- Replace src with your own optimized images (keep them small & use webp/jpg compressed) -->
+      <figure>
+        <img src="images/aba_nigeria_temple_lds(1).jpg" alt="Temple 1 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Temple of Dawn</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/accra_ghana_temple_lds.jpg" alt="Temple 2 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Serene Mountain Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/adelaide_australia_temple_lds.jpg" alt="Temple 3 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Lotus Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/albuquerque_temple_lds.jpg" alt="Temple 4 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Golden Spire Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/anchorage_alaska_temple_lds.jpg" alt="Temple 5 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Old Stone Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/apia_samoa_temple_lds.jpg" alt="Temple 6 - Example" loading="lazy" width="800" height="533">
+        <figcaption>City Center Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/atlanta_georgia_temple_sunset.jpg" alt="Temple 7 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Riverside Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/paraguay_temple.jpg" alt="Temple 8 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Sunset Terrace Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rendering_abidjan_ivory_coast_temple.jpg" alt="Temple 9 - Example" loading="lazy" width="800" height="533">
+        <figcaption>Temple of Reflection</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* Larger-screen overrides (temples-large.css) */
+/* This file should mostly contain media query overrides for larger screens */
+
+@media (min-width: 700px) {
+
+    /* Hide hamburger on larger screens */
+    .hamburger {
+      display: none;
+    }
+  
+    /* Make nav links visible and horizontal */
+    .nav-links {
+      display: flex !important;
+      flex-direction: row;
+      gap: 0.75rem;
+      align-items: center;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0.85rem;
+    }
+  
+    .header-inner {
+      padding: 1rem 0;
+    }
+  
+    /* Center the main column and limit width more visually */
+    main.container {
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+  
+    /* Grid for gallery: use auto-fit/minmax to create responsive columns */
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+  
+    figure {
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+    figure:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(16,24,40,0.08);
+    }
+  
+    .footer-inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
