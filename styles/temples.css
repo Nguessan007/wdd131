@@ -132,9 +132,9 @@
   
   /* Footer */
   .site-footer {
+    text-align: center;
     border-top: 1px solid rgba(0,0,0,0.06);
     background: var(--card);
-    background-color: burlywood;
     padding: 1rem ;
     margin-top: 2rem;
   }
