@@ -139,12 +139,13 @@
     margin-top: 2rem;
   }
   .footer-inner {
+    text-align: center;
     display:flex;
     flex-direction:column;
     gap: 0.35rem;
     align-items:flex-start;
     font-size: 0.9rem;
-    color: var(--muted);
+    color: var(--card);
   }
   
   /* Accessibility: visible focus outlines */
