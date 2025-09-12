@@ -143,6 +143,7 @@
     padding: 1rem;
     font-size: 0.9rem;
     color: var(--card);
+    font-family:'Montserrat', system-ui, -appl;
   }
   
   /* Accessibility: visible focus outlines */
