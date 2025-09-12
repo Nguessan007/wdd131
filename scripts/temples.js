@@ -72,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
       handleWidthChange(mq);
       mq.addEventListener('change', handleWidthChange);
     }
-   });
+ });
