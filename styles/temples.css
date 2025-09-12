@@ -56,7 +56,11 @@
   }
   
   /* Navigation (links hidden by default on mobile) */
-  .primary-nav { 
+  .primary-nav {
+    width: 100%;       /* ensures nav takes full width */
+    display: block;    /* default, but explicit */
+  }
+  
   .nav-links {
     display: none; /* mobile: menu hidden, toggled by JS */
     list-style: none;
@@ -186,4 +190,4 @@
     flex-direction: row;
     gap: 0.5rem;
   } 
- }  
+  
