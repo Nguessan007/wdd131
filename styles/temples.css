@@ -117,7 +117,7 @@
     flex-direction: column;
   }
   figure img {
-    width:100%;
+    width:auto;
     height:auto;
     display:block;
     object-fit:cover;
