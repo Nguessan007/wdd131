@@ -132,10 +132,10 @@
   
   /* Footer */
   .site-footer {
-    border-top: 50px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0,0,0,0.06);
     background: var(--card);
     background-color: burlywood;
-    padding: 0.8rem 0;
+    padding: 1rem ;
     margin-top: 2rem;
   }
   .footer-inner {
