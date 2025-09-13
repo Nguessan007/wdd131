@@ -114,7 +114,7 @@
   /* Figure card */
   figure {
     margin: 0;
-    background: var(--card);
+    background: var(--bg);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(16,24,40,0.06);
