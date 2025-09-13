@@ -18,7 +18,8 @@
   .container {
     width: calc(100% - 2rem);
     max-width: var(--max-width);
-    margin-left: auto;
+    margin: 0 auto;
+    text-align: center;
 
   }
   
