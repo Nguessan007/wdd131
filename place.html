@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madagascar - Place Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ivory Coast</h1>
+  </header>
+
+  <!-- Hero Image -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/civ2.jpg" media="(min-width: 768px)">
+      <img src="images/civ.jpg" alt="Beautiful view of Ivory Coast">
+    </picture>
+  </section>
+
+  <!-- Data Section -->
+  <section class="data">
+    <h2>Data</h2>
+    <ul>
+      <li><span>Population:</span> 31.93 million</li>
+      <li><span>Capital:</span> Yamoussoukro</li>
+      <li><span>Language:</span>French</li>
+      <li><span>Currency:</span> West African CFA franc</li>
+      <li><span>Continent:</span> Africa</li>
+    </ul>
+  </section>
+
+  <!-- Weather Section -->
+  <section class="weather">
+    <h2>Weather</h2>
+    <img src="images/weather.png" alt="Weather icon" class="weather-icon">
+    <ul>
+      <li><span>Temperature:</span> <span id="temp">25</span> °C</li>
+      <li><span>Wind:</span> <span id="wind">10</span> km/h</li>
+      <li><span>Condition:</span> Sunny</li>
+      <li><span>Wind Chill:</span> <span id="windchill">N/A</span></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name - Madagascar</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
