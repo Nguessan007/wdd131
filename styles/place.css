@@ -37,8 +37,8 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   
-  .data h2::before,
-  .weather h2::before {
+  .data h2::after,
+  .weather h2::after {
     content: "⛅ "; /* Will only appear on wider screens for Weather */
   }
   
@@ -70,7 +70,7 @@
       grid-template-columns: 2fr 1fr;
       gap: 1rem;
     }
-    .weather h2::before {
+    .weather h2::after {
       content: "⛅ ";
     }
   }
