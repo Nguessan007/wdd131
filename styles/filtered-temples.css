@@ -115,19 +115,16 @@
     margin-top: 1.5rem;
   }
   
-.card {
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 1rem;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
 .card img {
   width: 100%;
   border-radius: 8px;
 }
- 
+
+.card {
+  border: 1px solid burlywood;
+}
+
+
  /* Footer (mobile first) */
 .site-footer {
     text-align: center;
