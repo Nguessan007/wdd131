@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Explore a beautiful album of temple images from around the world. Browse historic, modern, large, and small temples in a responsive gallery designed for mobile and desktop.">
+  <meta name="author" content="Prince N'guessan" />
+
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Replace fonts if you prefer different ones -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first styles -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+
+  <!-- Larger-screen overrides (linked after mobile file) -->
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <h2>Temple Album</h2>
+      </div>
+
+      <!-- Hamburger button - visible only on mobile -->
+      <button id="hamburger" class="hamburger" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <!-- Navigation: use flex in CSS -->
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Home</h1>
+
+    <!-- gallery grid -->
+    <section class="gallery" aria-label="Temple gallery">
+      <!-- Replace src with your own optimized images (keep them small & use webp/jpg compressed) -->
+         
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Prince N'guessan. All rights reserved.</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
