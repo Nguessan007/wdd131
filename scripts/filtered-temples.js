@@ -93,23 +93,22 @@ document.addEventListener('DOMContentLoaded', () => {
       location: "Salt Lake City, Utah, USA",
       dedicated: "1893, April, 6",
       area: 253015,
-      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-exterior.jpeg"
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/320x200/salt-lake-temple-37762.jpg"
     },
     {
       templeName: "Rome Italy",
       location: "Rome, Italy",
       dedicated: "2019, March, 10",
       area: 41010,
-      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-exterior.jpeg"
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/320x200/4-Rome-Temple-2160935.jpg"
     },
     {
       templeName: "Accra Ghana",
       location: "Accra, Ghana",
       dedicated: "2004, January, 11",
       area: 17500,
-      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-exterior.jpeg"
-    }
-  ];
+      imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/208x117/accra-ghana-temple-detail-249022-2400x1200.jpg"
+    }];
 
   // ----- Gallery rendering -----
   const gallery = document.getElementById("templeGallery");
