@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthy Recipes — Submit Recipe</title>
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Healthy Recipes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="submit.html">Submit Recipe</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submit-recipe">
+      <h2>Submit Your Recipe</h2>
+      <form id="submit-form">
+        <label>
+          Recipe Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Ingredients (one per line):
+          <textarea name="ingredients" rows="5" required></textarea>
+        </label>
+        <label>
+          Instructions:
+          <textarea name="instructions" rows="8" required></textarea>
+        </label>
+        <label>
+          Dietary Tags (comma-separated):
+          <input type="text" name="tags">
+        </label>
+        <label>
+          Upload Image:
+          <input type="file" name="image" accept="image/*">
+        </label>
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Healthy Recipes</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

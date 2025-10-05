@@ -1,0 +1,41 @@
+:root {
+    --color-primary: #2c7a7b;
+    --color-secondary: #f6e05e;
+    --color-background: #ffffff;
+    --color-text: #2d3748;
+  }
+  body {
+    margin: 2rem;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  h1, h2, h3 {
+    color: var(--color-primary);
+    margin-top: 1.5rem;
+  }
+  header, nav, footer {
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 1rem 0;
+  }
+  nav a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  nav a:hover {
+    color: var(--color-secondary);
+  }
+  .wireframe {
+    border: 2px dashed var(--color-secondary);
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .heading-font {
+    font-family: "Montserrat", sans-serif;
+  }
+  .body-font {
+    font-family: "Open Sans", sans-serif;
+  }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan — Healthy Recipes</title>
+  <style>
+    :root {
+      --color-primary: #2c7a7b;
+      --color-secondary: #f6e05e;
+      --color-background: #ffffff;
+      --color-text: #2d3748;
+    }
+    body {
+      margin: 2rem;
+      font-family: "Open Sans", sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+    h1, h2, h3 {
+      color: var(--color-primary);
+      margin-top: 1.5rem;
+    }
+    header, nav, footer {
+      border-top: 2px solid var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      padding: 1rem 0;
+    }
+    nav a {
+      margin-right: 1.5rem;
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+    nav a:hover {
+      color: var(--color-secondary);
+    }
+    .wireframe {
+      border: 2px dashed var(--color-secondary);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .heading-font {
+      font-family: "Montserrat", sans-serif;
+    }
+    .body-font {
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="heading-font">Healthy Recipes</h1>
+    <p>Your go-to site for nutritious, easy-to-make meals</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="submit.html">Submit Recipe</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>1. Site Name</h2>
+    <p><strong>Healthy Recipes</strong></p>
+    <p>This name clearly conveys the site's intent: sharing recipes that are healthful and accessible. It’s memorable and keyword-rich (which is helpful for SEO).</p>
+    <p>Optional domain check: <em>healthyrecipes.com</em> or <em>healthy-recipes.org</em></p>
+  </section>
+
+  <section>
+    <h2>2. Site Purpose</h2>
+    <p>The site offers a curated collection of recipes that are nutritious, easy to prepare, and categorized by dietary needs (e.g. vegetarian, gluten-free, low-fat). Visitors can explore recipes, see nutritional breakdowns, filter by criteria (time, ingredients, diet), save favorites, and contribute their own recipes via a submission page.</p>
+  </section>
+
+  <section>
+    <h2>3. Scenarios (User Questions)</h2>
+    <ul>
+      <li>“I only have 30 minutes tonight — can I find a healthy dinner recipe I can make fast?”</li>
+      <li>“I’m dairy-free — are there dessert recipes without dairy?”</li>
+      <li>“How do I upload my own recipe and have it appear in my personal favorites list?”</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Color Scheme</h2>
+    <p>Here are the chosen colors and their proposed usage:</p>
+    <ul>
+      <li><strong>#2c7a7b (teal)</strong> — primary color: headings, navigation links, primary buttons.</li>
+      <li><strong>#f6e05e (soft yellow)</strong> — secondary/accent color: hover states, badges, highlights, callouts.</li>
+      <li><strong>#ffffff (white)</strong> — background color for main content areas.</li>
+      <li><strong>#2d3748 (dark slate)</strong> — for body text, subheadings, general readability.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Typography</h2>
+    <p>Chosen fonts (via Google Fonts):</p>
+    <ul>
+      <li><strong>Montserrat</strong> — for headings (h1, h2, h3)</li>
+      <li><strong>Open Sans</strong> — for body text, paragraphs, lists</li>
+      <li><strong>Playfair Display</strong> (optional) — for special recipe titles or stylized quotes</li>
+    </ul>
+    <p>Example preview:</p>
+    <p class="heading-font">Heading Example — Montserrat</p>
+    <p class="body-font">Body text example — Open Sans. This text simulates what typical paragraphs might look like in the site.</p>
+  </section>
+
+  <section>
+    <h2>6. Website Structure & Page Plan</h2>
+    <p>The site will have **at least three main pages**, all sharing a consistent header, navigation, and footer. Here’s a brief outline of each:</p>
+    <dl>
+      <dt><strong>Home (index.html)</strong></dt>
+      <dd>
+        <ul>
+          <li>Featured recipe(s) & hero banner</li>
+          <li>Category links or filters (e.g. “Quick Meals”, “Vegetarian”, “Desserts”)</li>
+          <li>Recent or popular recipes preview</li>
+          <li>Call to action: “Submit your recipe” or “Browse all”</li>
+        </ul>
+      </dd>
+      <dt><strong>Recipes (recipes.html)</strong></dt>
+      <dd>
+        <ul>
+          <li>Recipe listing (cards or grid), filterable by diet, prep time, difficulty</li>
+          <li>Ability to click into a recipe detail page (these could be subpages or dynamically loaded)</li>
+          <li>Search function within recipes</li>
+        </ul>
+      </dd>
+      <dt><strong>Submit Recipe (submit.html)</strong></dt>
+      <dd>
+        <ul>
+          <li>Form to input recipe name, ingredients, instructions, dietary tags, image upload</li>
+          <li>Client-side validation + JavaScript to handle form submission</li>
+          <li>Option to preview before submitting</li>
+        </ul>
+      </dd>
+      <dt><strong>References (references.html)</strong></dt>
+      <dd>Page listing image, media, and content sources (as required).</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>7. Wireframes</h2>
+    <h3>Mobile View (Home Page)</h3>
+    <div class="wireframe">
+      <p>[ Logo ]</p>
+      <p>[ Hamburger menu icon / collapsed nav ]</p>
+      <p>[ Hero / featured recipe image ]</p>
+      <p>[ Category buttons or filter tabs ]</p>
+      <p>[ Recipe cards (vertical list) ]</p>
+      <p>[ Footer links ]</p>
+    </div>
+    <h3>Desktop View (Home Page)</h3>
+    <div class="wireframe">
+      <p>----------------------------------------------------------</p>
+      <p>| Logo | Nav links | Search bar |</p>
+      <p>----------------------------------------------------------</p>
+      <p>| Sidebar filters (left) | Featured hero recipe (center) |</p>
+      <p>----------------------------------------------------------</p>
+      <p>| Recipe cards grid (3-column) spanning width |</p>
+      <p>----------------------------------------------------------</p>
+      <p>| Footer: About | Contact | References | Social Links |</p>
+      <p>----------------------------------------------------------</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. CSS & Styling Strategy</h2>
+    <p>We will use external CSS files (e.g. <code>styles.css</code>, possibly split into <code>layout.css</code> and <code>theme.css</code>). Key styling plans:</p>
+    <ul>
+      <li>Define CSS variables (for colors, spacing, font sizes) in a root stylesheet.</li>
+      <li>Set global base styles (body, headings, links, images).</li>
+      <li>Define layout containers and grid/flex utilities for responsiveness.</li>
+      <li>Media queries for mobile, tablet, desktop breakpoints.</li>
+      <li>Button and link hover/focus styles using the accent color.</li>
+      <li>Utility/helper classes (e.g. margin-spacing, text centering, card layout).</li>
+      <li>Lazy loading for images (via <code>loading="lazy"</code> in HTML) to optimize performance.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>9. Dynamic & JavaScript Features (Planned)</h2>
+    <p>The site will incorporate the following JavaScript and dynamic features:</p>
+    <ul>
+      <li>Multiple functions (e.g. for filtering recipes, form validation, saving favorites).</li>
+      <li>DOM interaction: selecting elements (buttons, filters, recipe cards), modifying classes/styles/content, listening for user events (clicks, form submit).</li>
+      <li>Conditional branching (e.g. show/hide content, error paths, filter logic).</li>
+      <li>Use of objects, arrays, and array methods (e.g. an array of recipes; filtering via <code>.filter()</code>, mapping to display list, etc.).</li>
+      <li>Template literals exclusively when building HTML strings (e.g. recipe card markup).</li>
+      <li>localStorage: for storing user’s favorite recipes or submitted recipes so that data persists across page reloads.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. Accessibility, Usability, & Design Principles</h2>
+    <ul>
+      <li>Ensure text contrast meets accessibility standards (WCAG) using the color scheme.</li>
+      <li>Provide alt attributes for all images.</li>
+      <li>Use semantic HTML (header, nav, main, article, section, footer).</li>
+      <li>Keyboard navigation support (e.g. focus states, tab order).</li>
+      <li>Responsive design that rearranges content logically on smaller screens.</li>
+      <li>Consistent navigation and visual theme across all pages.</li>
+      <li>Optimize images (compressed, appropriately sized) and lazy load them.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Healthy Recipes</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
