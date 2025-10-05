@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Healthy Recipes</h1>
-    <nav>
+    <nav role="navigation">
       <a href="index.html">Home</a>
       <a href="recipes.html">Recipes</a>
       <a href="submit.html">Submit Recipe</a>
@@ -17,22 +17,19 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
     <section class="filter">
       <h2>Filter Recipes</h2>
-      <label>
-        Search:
-        <input type="text" id="search-input" placeholder="Search by name or ingredient">
-      </label>
-      <label>
-        Diet:
-        <select id="diet-filter">
-          <option value="">All</option>
-          <option value="vegetarian">Vegetarian</option>
-          <option value="gluten-free">Gluten Free</option>
-          <option value="low-carb">Low Carb</option>
-        </select>
-      </label>
+      <label for="search-input">Search:</label>
+      <input type="text" id="search-input" placeholder="Search by name or ingredient">
+      
+      <label for="diet-filter">Diet:</label>
+      <select id="diet-filter">
+        <option value="">All</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="gluten-free">Gluten Free</option>
+        <option value="low-carb">Low Carb</option>
+      </select>
     </section>
 
     <section class="recipe-list">
@@ -43,7 +40,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>© 2025 Healthy Recipes</p>
     <p><a href="references.html">References</a></p>
   </footer>

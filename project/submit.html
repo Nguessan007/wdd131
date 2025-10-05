@@ -20,27 +20,32 @@
   <main>
     <section class="submit-recipe">
       <h2>Submit Your Recipe</h2>
-      <form id="submit-form">
-        <label>
+      <form id="submit-form" enctype="multipart/form-data" method="POST" action="submit_recipe.php">
+        <label for="recipe-name">
           Recipe Name:
-          <input type="text" name="name" required>
+          <input type="text" id="recipe-name" name="name" required>
         </label>
-        <label>
+
+        <label for="ingredients">
           Ingredients (one per line):
-          <textarea name="ingredients" rows="5" required></textarea>
+          <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
         </label>
-        <label>
+
+        <label for="instructions">
           Instructions:
-          <textarea name="instructions" rows="8" required></textarea>
+          <textarea id="instructions" name="instructions" rows="8" required></textarea>
         </label>
-        <label>
+
+        <label for="tags">
           Dietary Tags (comma-separated):
-          <input type="text" name="tags">
+          <input type="text" id="tags" name="tags">
         </label>
-        <label>
+
+        <label for="image">
           Upload Image:
-          <input type="file" name="image" accept="image/*">
+          <input type="file" id="image" name="image" accept="image/*" required>
         </label>
+
         <button type="submit">Submit Recipe</button>
       </form>
     </section>

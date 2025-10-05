@@ -3,39 +3,126 @@
     --color-secondary: #f6e05e;
     --color-background: #ffffff;
     --color-text: #2d3748;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
   }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   body {
     margin: 2rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-body);
     background-color: var(--color-background);
     color: var(--color-text);
     line-height: 1.5;
   }
-  h1, h2, h3 {
-    color: var(--color-primary);
-    margin-top: 1.5rem;
-  }
-  header, nav, footer {
+  
+  header,
+  footer {
     border-top: 2px solid var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
     padding: 1rem 0;
+    text-align: center;
   }
+  
+  header h1 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+  }
+  
   nav a {
     margin-right: 1.5rem;
     text-decoration: none;
     color: var(--color-primary);
   }
+  
   nav a:hover {
     color: var(--color-secondary);
   }
-  .wireframe {
-    border: 2px dashed var(--color-secondary);
+  
+  .hero {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .categories ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1rem 0;
+  }
+  
+  .categories a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  
+  .categories a:hover {
+    color: var(--color-secondary);
+  }
+  
+  .recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
     padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
     margin: 1rem 0;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
   }
-  .heading-font {
-    font-family: "Montserrat", sans-serif;
+  
+  .card a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
   }
-  .body-font {
-    font-family: "Open Sans", sans-serif;
+  
+  .card a:hover {
+    text-decoration: underline;
   }
+  
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  
+  footer a:hover {
+    color: var(--color-secondary);
+  }
+  
