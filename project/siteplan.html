@@ -1,40 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Plan — Healthy Recipes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Recipes Site Plan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <style>
-    /* Your existing CSS styles */
+    :root {
+      --primary-color: #ffb347; /* Warm orange for friendliness */
+      --secondary-color: #77dd77; /* Soft green for freshness */
+      --font-body: 'Poppins', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: #fffdf7;
+      color: #333;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--secondary-color);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .wireframes {
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1 class="heading-font">Healthy Recipes</h1>
-    <p>Your go-to site for nutritious, easy-to-make meals</p>
-    <nav aria-label="Main Navigation">
-      <a href="index.html">Home</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="submit.html">Submit Recipe</a>
-      <a href="references.html">References</a>
-    </nav>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/2909/2909761.png" alt="Healthy Recipes Logo" />
+      <h1>Healthy Recipes</h1>
+    </div>
+    <p style="text-align:center; font-size:1.1rem;">
+      A friendly and colorful guide to delicious, nutritious meals.
+    </p>
   </header>
 
   <main>
-    <section>
-      <h2>1. Site Name</h2>
-      <p><strong>Healthy Recipes</strong></p>
-      <p>This name clearly conveys the site's intent: sharing recipes that are healthful and accessible. It’s memorable and keyword-rich (which is helpful for SEO).</p>
-      <p>Optional domain check: <em>healthyrecipes.com</em> or <em>healthy-recipes.org</em></p>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Healthy Recipes</strong> – I chose this name because it’s simple, clear, and reflects the purpose of the website: to inspire people to cook wholesome meals at home. It’s easy to remember and directly conveys what the site offers.</p>
+      <p><em>Optional domain:</em> healthyrecipeshub.com</p>
     </section>
 
-    <!-- Additional sections here -->
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The purpose of this website is to provide a collection of nutritious, easy-to-follow recipes that promote healthy living. Visitors will find step-by-step guides, nutritional tips, and cooking inspiration. The site aims to encourage balanced eating with ingredients that are fresh, accessible, and affordable.</p>
+    </section>
 
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>“I’m new to cooking—what are some simple, healthy dinner recipes I can start with?”</li>
+        <li>“What are some affordable, nutritious meals I can make in under 30 minutes?”</li>
+        <li>“Can I find vegetarian or gluten-free options on this site?”</li>
+      </ul>
+    </section>
+
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <p><strong>Primary Color:</strong> <span style="color:#ffb347;">#ffb347</span> – used for buttons, headings, and accent highlights to create warmth and friendliness.</p>
+      <p><strong>Secondary Color:</strong> <span style="color:#77dd77;">#77dd77</span> – used for titles, dividers, and visual freshness representing healthy food and nature.</p>
+      <p>The siteplan document uses these colors for headings and accents as shown here.</p>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p><strong>Font:</strong> Poppins (from Google Fonts)</p>
+      <ul>
+        <li><strong>Headings (h1, h2):</strong> Poppins, bold, green accent color.</li>
+        <li><strong>Body text:</strong> Poppins, regular weight for easy reading.</li>
+      </ul>
+      <p>This document uses the same font style for consistency.</p>
+    </section>
+
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <div class="wireframes">
+        <h3>Mobile View</h3>
+        <p>Top navigation bar → Logo → Welcome message → Recipe categories (as buttons or cards) → Featured recipes (scroll) → Footer with contact/social links.</p>
+
+        <h3>Desktop View</h3>
+        <p>Header with logo and nav links → Hero section with featured image → Grid layout of recipe cards → Sidebar for filters (diet type, prep time) → Footer with newsletter signup.</p>
+      </div>
+      <p><em>Note:</em> These wireframes are conceptual sketches showing content layout and hierarchy.</p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Healthy Recipes</p>
-    <p><a href="references.html">References</a></p>
+    <p>© 2025 Healthy Recipes | Created for WDD Project – Site Planning Document</p>
   </footer>
 </body>
 </html>
+
