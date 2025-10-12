@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Healthy Recipes offers nutritious, easy-to-make meals that promote balanced living. Discover quick breakfasts, wholesome lunches, and delicious dinners for every lifestyle.">
+  <meta name="author" content="Prince N'guessan">
+  <title>Healthy Recipes — Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="indexh.html">Healthy Recipes</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="indexh.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Simple, nutritious recipes for busy lives</h1>
+      <p>Find quick dinners, vegetarian options, and meal-prep ideas.</p>
+      <a class="btn" href="recipes.html">Browse recipes</a>
+    </section>
+
+    <section aria-labelledby="featured" class="featured">
+      <h2 id="featured">Featured recipes</h2>
+      <div id="featured-list" class="grid"></div>
+    </section>
+
+    <section class="subscribe" aria-labelledby="sub">
+      <h2 id="sub">Subscribe for weekly recipes</h2>
+      <form id="subscribe-form" class="form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="subscribe-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Healthy Recipes</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

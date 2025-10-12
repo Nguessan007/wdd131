@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Learn more about Healthy Recipes, our mission to make nutritious eating simple, and our tips for maintaining a healthy lifestyle through mindful food choices.">
+  <meta name="author" content="Prince N'guessan">
+  <title>About — Healthy Recipes</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="indexh.html">Healthy Recipes</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="indexh.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About Healthy Recipes</h1>
+    <p>Mission statement and credit information. Replace this with your own content and cite sources on the references page.</p>
+
+    <h2>Submit a recipe</h2>
+    <form id="recipe-form" class="form">
+      <label for="r-title">Recipe title</label>
+      <input id="r-title" required />
+
+      <label for="r-time">Time (minutes)</label>
+      <input id="r-time" type="number" min="1" required/>
+
+      <label for="r-tags">Tags (comma separated)</label>
+      <input id="r-tags" placeholder="vegetarian, glutenfree" />
+
+      <label for="r-image">Image URL</label>
+      <input id="r-image" type="url" placeholder="https://..." />
+
+      <button type="submit">Add recipe</button>
+    </form>
+    <p id="form-msg" aria-live="polite"></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Healthy Recipes</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
